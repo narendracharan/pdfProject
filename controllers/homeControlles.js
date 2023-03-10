@@ -16,7 +16,6 @@ const generatePDF = async (req, res, next) => {
     );
     const filename = Math.random() + "_docs" + ".pdf";
     let array = [];
-
     data.forEach((d) => {
       const prod = {
         Variety: d.Variety,
@@ -28,7 +27,6 @@ const generatePDF = async (req, res, next) => {
       };
       array.push(prod);
     });
-
     let subtotal = 0;
     array.forEach((i) => {
       subtotal += i.Amount;
