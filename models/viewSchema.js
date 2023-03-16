@@ -14,11 +14,11 @@ const schema=new mongoose.Schema({
         require:true
     },
     Quantity:{
-        type:String,
+        type:Number,
         require:true
     },
     Price:{
-        type:String,
+        type:Number,
         require:true
     }
 })
